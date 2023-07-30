@@ -1,0 +1,27 @@
+selector{
+    property:value;
+}
+body {
+    background-color: red;
+    font-size: x-large;
+    font-style: color white;
+    text-align: center;
+}
+nav {
+height: 6000px;
+width: 200px;
+float: left;
+padding: 5px;
+line-height: 30px;
+}
+footer  {
+text-align: center;
+margin-right: 200px;
+}
+image {
+margin-right: 200px;
+align-items: center;
+}
+header {
+    text-align: center;
+}

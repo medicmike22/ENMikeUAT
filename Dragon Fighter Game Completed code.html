@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prepare to Fight The Dragon!</title>
+</head>
+<body>  
+
+<h1>Prepare to Fight The Dragon!</h1>
+<p>The Dragon is Powerful! Will You Be Strong Enough to Fight Him?</p>
+<p>
+
+<img id="Dragon Fight" src= "C:\Users\medic\OneDrive\Desktop\Week 2 Project\Sindragosa.jpg">
+
+</p>
+The Adventure Begins! A giant dragon is attacking the village. Will you stay and fight?
+<p>
+    <script>
+        // Create a button element
+    const button = document.createElement('button')
+
+// Set the button text to 
+button.innerText = "Let's Go!"
+
+button.id = 'mainButton'
+
+// Attach the "click" event to your button
+button.addEventListener('click', () => {
+  // When there is a "click"
+
+
+  document.write("Prepare for battle!"),
+document.write("<br/>")
+  document.write("The Dragon's Health is "  +   DHealth)
+  document.write("<br/>")
+  document.write("Your Health is "  +   YHealth)
+  document.write("<br/>")
+//I used Math Random with Parse to get a dice roll for the attack
+document.write("Your Attack Roll was " + Aroll)
+document.write("<br />")
+//I used if statements to set up 3 scenarios- a hit
+if(Aroll>8)
+{
+    document.write("That's a hit!");
+    document.write("<br />" + "You strike at the dragon....");
+    document.write("<br />");
+    document.write("The dragon's health drops to " + Dhealth2 )
+    document.write(" and the dragon dies!");
+    document.write("<br />");
+    }
+
+
+//a miss
+else
+{
+    document.write("Oh no! You missed the dragon!");
+    document.write("<br />");
+    document.write("Now it's the dragon's turn");
+    document.write("<br />");
+    document.write("The Dragon rolled a "+ Droll)
+    document.write("<br />");
+  
+}
+
+if(Droll<8 && Aroll<8)
+{
+document.write("<br />");
+document.write("The dragon missed! Attack again!");
+document.write("<br />");
+// and if the player misses but the dragon hits
+}
+if (Aroll<8 && Droll>8)
+{
+document.write("The dragon opens its mouth and covers you in fire!"), 
+document.write("<br />")
+document.write("Your health drops to " + Yhealth2)
+document.write("<br />")
+document.write("You died! Try again!")
+dpic;
+
+}
+
+
+})
+// I built variables but I couldn't get my hit health to subtract properly
+document.body.appendChild(button)
+
+var DHealth = "100"
+var YHealth = "50"
+var DAttack = "50"
+var Dhealth2 = (100-100)
+var Yhealth2 = (50-50)
+var YAttack = "100"
+var Aroll = parseInt(Math.random(1)*20)
+var Droll = parseInt(Math.random(1)*20)
+var dpic = src= "C:\Users\medic\OneDrive\Desktop\Foundation 1.1\Dragon Fight.jfif"
+
+
+</script>
+
+
+// imported the same css 
+</body>
+<link rel="stylesheet" href="main.css">
+</html>
