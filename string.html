@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+</head>
+<title>palindrome crunch</title>
+
+
+
+<script>
+function checkPalindrome(string) {
+
+    // convert string to an array
+    const arrayValues = string.split('');
+
+    // reverse the array values
+    const reverseArrayValues = arrayValues.reverse();
+
+    // convert array to string
+    const reverseString = reverseArrayValues.join('');
+
+    if(string == reverseString) {
+        document.write('It is a palindrome');
+    }
+    else {
+        document.write('It is not a palindrome');
+    }
+}
+
+
+
+var string = document.getElementById("PI").value;
+
+// I couldn't find a way to connect the inpout to run the function. I kept getting Uncaught TypeError TypeError: Cannot read properties of null (reading 'value')
+
+</script>
+<body>
+<label id="pattempt" > Type in a word to see if  it's a Palindrome </label>&nbsp;<input id="PI" type="text" />
+
+<link rel="stylesheet" href="main.css">
+<br>
+<br>
+
+<button onclick="checkPalindrome(string)">
+    Press me!
+
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<img id="Dragon Fight" src= "C:\Users\medic\OneDrive\Pictures\palindrome.jfif">
+</body>
