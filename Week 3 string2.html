@@ -1,0 +1,95 @@
+<html>
+
+<head style = "text-align: center" > Name and Zip Code Form</head>
+
+
+
+
+
+
+
+<!--I tried to set up my if statements here to run errors for names but I couldn't get the button to work -->
+<!--I tried a couple variables to create a lopp but they came back as undefined or didn't run->
+<script>
+var constant = 1 
+
+function Name()
+{
+     var Fname = document.getElementById("Finame").value;
+     var Lname = document.getElementById("Laname").value;
+     var Zcode = document.getElementById("Zicode".value);
+    if (Fname.value == "")
+    {
+        window.alert("Please enter yor first name.");
+        Fname.focus();
+        return false;
+    }
+if (Lname.value == "")
+{
+window.alert("Please enter your Last Name")
+Lname.focus();
+return false;
+}
+
+if (Zcode.value == "")
+    {
+        window.alert("Please enter your Zip Code.");
+        Zcode.focus();
+        return false;
+    }
+
+return true;
+
+var Fnamecnt = Fname.charAt(Fname.length - 1);
+var Lnamecnt = Lname.charAt(Lname.length - 1);  
+
+if ((Fnamecnt + Lnamecnt) < 20) {
+    alert("The First and Last Name. Please reduce your name size or request a name change.")
+}
+} 
+</script>
+<!--Inputted input styles here  -->
+<style>
+
+NAME {                                        
+    margin-left: 70px;
+    font-weight: bold ;
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: left;
+    margin-right: 10px;
+    font-family:sans-serif,bold, Arial, Helvetica;
+    font-size:14px;
+}
+
+form {
+margin: o auto;
+width: 600px;
+}</style></head>
+
+<body>
+    
+<h1 style = "text-align:c enter">NAME CHECK FORM</h1>    
+
+<!--FIrst Name Input  -->
+<p>First Name:<input type= "text" size = 65 name = "Finame"></p><br>
+<!--Last Name Name Input  -->
+<p>Last Name:<input type= "text" size = 65 name = "Laname"></p><br>
+<p>Zip Code:<input type="number" size = 65 name = "Zicode"></p><br>
+
+<br />
+<br />
+<p>
+    Comments:
+    <textarea cols="55" name="Comment"> </textarea>
+</p>
+<p>
+
+</p>
+</form>
+<button onclick="Name()">Click me</button>
+
+</body>
+<link rel="stylesheet" href="main.css">
+</html>
